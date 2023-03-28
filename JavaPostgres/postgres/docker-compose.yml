@@ -16,6 +16,7 @@ services:
       - ./init:/docker-entrypoint-initdb.d
 #      - ./init/1.sql:/docker-entrypoint-initdb.d/1.sql
 #      - ./init/init-database.sh:/docker-entrypoint-initdb.d/init-database.sh
+#      - ./postgresql.conf:/var/lib/postgresql/data/postgresql.conf
     ports:
       - "5430:5432"  
   pgadmin:
